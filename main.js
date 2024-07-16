@@ -99,6 +99,7 @@ const srLeft = ScrollReveal({
 
 srLeft.reveal('.about-info',{delay: 100})
 srLeft.reveal('.contact-info',{delay: 100})
+srLeft.reveal('.experience-block',{delay: 100})
 
 /* -- ABOUT SKILLS & FORM BOX -- */
 const srRight = ScrollReveal({
@@ -110,6 +111,7 @@ const srRight = ScrollReveal({
 
 srRight.reveal('.skills-box',{delay: 100})
 srRight.reveal('.form-control',{delay: 100})
+srRight.reveal('.experience-block',{delay: 100})
 
 
 
@@ -148,6 +150,76 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Add click event listeners to skill boxes
+  document.querySelectorAll('.skills-box').forEach(box => {
+      box.addEventListener('click', function () {
+          hideAllDescriptions();
+      });
+  });
+
+  // Add click event listeners to skill images
+  document.querySelectorAll('.skill-item').forEach(item => {
+      item.addEventListener('click', function (event) {
+          event.stopPropagation();
+          toggleSkillContent(event, item.querySelector('img').alt.toLowerCase());
+      });
+  });
+});
+
+function hideAllDescriptions() {
+  document.querySelectorAll('.more-content').forEach(content => {
+      content.style.display = 'none';
+  });
+
+  document.querySelectorAll('.skill-more-content').forEach(content => {
+      content.style.display = 'none';
+  });
+}
+
+function toggleSkillContent(event, id) {
+  hideAllDescriptions();
+  const skillContent = document.getElementById(id);
+  if (skillContent) {
+      skillContent.style.display = 'block';
+  }
+
+  const parentContent = skillContent.closest('.more-content');
+  if (parentContent) {
+      parentContent.style.display = 'block';
+  }
+}
+
+
+
+
+function handleSubmit(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+  
+  // Validate email (you can add more validation if needed)
+  const emailField = document.querySelector('input[name="Email"]');
+  const email = emailField.value;
+  if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      return false;
+  }
+
+  // Display success message
+  alert("Submitted successfully!");
+
+  // Clear form fields
+  document.querySelector('form[name="submit-to-google-sheet"]').reset();
+
+  return false; // Prevent actual form submission
+}
+
+function validateEmail(email) {
+  // Simple email validation (you can improve this regex if needed)
+  const re = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+  return re.test(email);
+}
 
 
 window.addEventListener('scroll', scrollActive)

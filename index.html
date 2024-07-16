@@ -29,6 +29,7 @@
 </style>
 
 <body>
+    <div class="c">
 
    <div class="container">
     <!-- --------------- HEADER --------------- -->
@@ -55,6 +56,7 @@
                     <a href="#projects" class="nav-link ">Projects</a>
                     <div class="circle"></div>
                 </li>
+               
                 <li class="nav_list">
                     <a href="#contact" class="nav-link ">Contact</a>
                     <div class="circle"></div>
@@ -132,7 +134,7 @@
        
         <section class="section" id="about">
             <div class="top-header">
-                <h1>About Me</h1>
+                <h1 style="color: white;">About Me</h1>
             </div>
             <div class="row">
                 <div class="col about-col">
@@ -155,104 +157,256 @@
     
        
        <!-- ----- Skill section----- -->
-    <section class="skills-section" id="skills">
-        <div class="container">
-            <div class="top-header">
-                <h1>Skills</h1>
-            </div>
-            <div class="skills-content">
-                <div class="skills-column">
-                    <div class="skills-box" ondblclick="redirect('skill.html')">
-                        <h3 ><a href="skill.html">Data Analysis></a></h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <img src="Images/python1.png" alt="Python">
-                                <span>Python</span>
+       
+<!--        
+           <section class="skills-section" id="skills">
+               <div class="container">
+                   <div class="top-header">
+                       <h1 style="color: white;">Skills</h1>
+                   </div>
+                   <div class="skills-content">
+                       <div class="skills-column">
+                           <div class="skills-box" ondblclick="toggleContent('data-analysis')">
+                               <h3><a href="">Data Analysis</a></h3>
+                               <div class="skills-grid">
+                                   <div class="skill-item">
+                                       <img src="Images/python1.png" alt="Python">
+                                       <span>Python</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/power bi.png" alt="Power Bi">
+                                       <span>Power Bi</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/excel.png" alt="Excel">
+                                       <span>Excel</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/dsa.png" alt="DSA">
+                                       <span>DSA</span>
+                                   </div>
+                               </div>
+                               <div class="more-content" id="data-analysis">
+                                   <p>
+                                       Data analysis involves inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. It encompasses various techniques and tools, including statistical analysis, machine learning, and data visualization.
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="skills-box" ondblclick="toggleContent('development')">
+                               <h3><a href="development.html">Development</a></h3>
+                               <div class="skills-grid">
+                                   <div class="skill-item">
+                                       <img src="Images/html.png" alt="HTML">
+                                       <span>HTML</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/css.png" alt="CSS">
+                                       <span>CSS</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/js.png" alt="JavaScript">
+                                       <span>JavaScript</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/bootstrap.png" alt="Bootstrap">
+                                       <span>Bootstrap</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/wordpress.png" alt="WordPress">
+                                       <span>WordPress</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/php.PNG" alt="PHP">
+                                       <span>PHP</span>
+                                   </div>
+                               </div>
+                               <div class="more-content" id="development">
+                                   <p>
+                                       Development involves creating, designing, and maintaining websites and applications. It requires knowledge of various programming languages, frameworks, and tools. This skill set includes front-end development, back-end development, and full-stack development.
+                                   </p>
+                               </div>
+                           </div>
+                           <div class="skills-box" ondblclick="toggleContent('programming-database')">
+                               <h3 ondblclick="toggleContent('programming-database')"> Programming AND Database</a></h3>
+                               <div class="skills-grid">
+                                   <div class="skill-item">
+                                       <img src="Images/mysqli.PNG" alt="MySQL">
+                                       <span>MySQL</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/java.png" alt="Java">
+                                       <span>Java</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/c.png" alt="C">
+                                       <span>C</span>
+                                   </div>
+                                   <div class="skill-item">
+                                       <img src="Images/c++.png" alt="C++">
+                                       <span>C++</span>
+                                   </div>
+                               </div>
+                               <div class="more-content" id="programming-database">
+                                   <p>
+                                       Programming and database management involve writing code and managing databases to create efficient and scalable software applications. This includes understanding data structures, algorithms, and database design principles.
+                                   </p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section> -->
+
+
+           
+
+          
+           <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="top-header">
+                    <h1 style="color: white;">Skills</h1>
+                </div>
+                <div class="skills-content">
+                    <div class="skills-column">
+                        <div class="skills-box" onclick="hideAllDescriptions()">
+                            <h3 onclick="toggleContent(event, 'data-analysis')"><a href="javascript:void(0);">Data Analysis</a></h3>
+                            <div class="skills-grid">
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'python')">
+                                    <img src="Images/python1.png" alt="Python">
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'power bi')">
+                                    <img src="Images/power bi.png" alt="Power Bi">
+                                    <span>Power Bi</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'excel')">
+                                    <img src="Images/excel.png" alt="Excel">
+                                    <span>Excel</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'dsa')">
+                                    <img src="Images/dsa.png" alt="DSA">
+                                    <span>DSA</span>
+                                </div>
                             </div>
-                            <div class="skill-item">
-                                <img src="Images/power bi.png" alt="Power Bi">
-                                <span>Power Bi</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/excel.png" alt="Excel">
-                                <span>Excel</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/dsa.png" alt="DSA">
-                                <span>DSA</span>
+                            <div class="more-content" id="data-analysis">
+                                <p>
+                                    Data analysis involves inspecting, cleansing, transforming, and modeling data with the goal of discovering useful information, informing conclusions, and supporting decision-making. It encompasses various techniques and tools, including statistical analysis, machine learning, and data visualization.
+                                </p>
+                                <div class="skill-more-content" id="python">
+                                    <p>Python is a versatile language used for data analysis, web development, automation, and more. It has powerful libraries like Pandas, NumPy, and Matplotlib for data manipulation and visualization.</p>
+                                </div>
+                                <div class="skill-more-content" id="power bi">
+                                    <p>Power BI is a business analytics tool by Microsoft that provides interactive visualizations and business intelligence capabilities with a simple interface for end users to create their reports and dashboards.</p>
+                                </div>
+                                <div class="skill-more-content" id="excel">
+                                    <p>Excel is a powerful tool for data analysis and visualization, widely used for statistical analysis, financial modeling, and data management. It supports complex formulas, pivot tables, and graphing tools.</p>
+                                </div>
+                                <div class="skill-more-content" id="dsa">
+                                    <p>Data Structures and Algorithms (DSA) are essential for efficient data processing and manipulation. Understanding DSA helps in solving complex computational problems and optimizing code performance.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skills-box" ondblclick="redirect('development.html')">
-                        <h3 ><a href="development.html">Development></a></h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <img src="Images/html.png" alt="HTML">
-                                <span>HTML</span>
+                        <div class="skills-box" onclick="hideAllDescriptions()">
+                            <h3 onclick="toggleContent(event, 'development')"><a href="javascript:void(0);">Development</a></h3>
+                            <div class="skills-grid">
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'html')">
+                                    <img src="Images/html.png" alt="HTML">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'css')">
+                                    <img src="Images/css.png" alt="CSS">
+                                    <span>CSS</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'javascript')">
+                                    <img src="Images/js.png" alt="JavaScript">
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'bootstrap')">
+                                    <img src="Images/bootstrap.png" alt="Bootstrap">
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'wordpress')">
+                                    <img src="Images/wordpress.png" alt="WordPress">
+                                    <span>WordPress</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'php')">
+                                    <img src="Images/php.PNG" alt="PHP">
+                                    <span>PHP</span>
+                                </div>
                             </div>
-                            <div class="skill-item">
-                                <img src="Images/css.png" alt="CSS">
-                                <span>CSS</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/js.png" alt="JavaScript">
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/bootstrap.png" alt="Bootstrap">
-                                <span>Bootstrap</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/wordpress.png" alt="WordPress">
-                                <span>WordPress</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/php.PNG" alt="PHP">
-                                <span>PHP</span>
+                            <div class="more-content" id="development">
+                                <p>
+                                    Development involves creating, designing, and maintaining websites and applications. It requires knowledge of various programming languages, frameworks, and tools. This skill set includes front-end development, back-end development, and full-stack development.
+                                </p>
+                                <div class="skill-more-content" id="html">
+                                    <p>HTML (Hypertext Markup Language) is the standard markup language for creating web pages. It provides the structure of a webpage and is used along with CSS and JavaScript to create interactive and visually appealing websites.</p>
+                                </div>
+                                <div class="skill-more-content" id="css">
+                                    <p>CSS (Cascading Style Sheets) is used for describing the presentation of a document written in HTML. CSS controls the layout, colors, fonts, and overall look of a website, making it an essential part of web development.</p>
+                                </div>
+                                <div class="skill-more-content" id="javascript">
+                                    <p>JavaScript is a programming language used to create dynamic and interactive effects within web browsers. It allows for real-time updates, animations, and interactive elements on websites.</p>
+                                </div>
+                                <div class="skill-more-content" id="bootstrap">
+                                    <p>Bootstrap is a popular front-end framework for developing responsive and mobile-first websites. It includes HTML, CSS, and JavaScript components for various design elements like buttons, forms, navigation bars, and modals.</p>
+                                </div>
+                                <div class="skill-more-content" id="wordpress">
+                                    <p>WordPress is a content management system (CMS) that allows users to create and manage websites easily. It offers a wide range of themes, plugins, and customizable features to build and maintain websites.</p>
+                                </div>
+                                <div class="skill-more-content" id="php">
+                                    <p>PHP (Hypertext Preprocessor) is a server-side scripting language designed for web development. It is widely used to create dynamic web pages, interact with databases, and manage server-side tasks.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="skills-box" ondblclick="redirect('programming.html')">
-                        <h3 ><a href="programming.html">Programming AND Database></a></h3>
-                        <div class="skills-grid">
-                            <div class="skill-item">
-                                <img src="Images/mysqli.PNG" alt="MySQL">
-                                <span>MySQL</span>
+                        <div class="skills-box" onclick="hideAllDescriptions()">
+                            <h3 onclick="toggleContent(event, 'programming-database')"><a href="javascript:void(0);">Programming AND Database</a></h3>
+                            <div class="skills-grid">
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'mysql')">
+                                    <img src="Images/mysqli.PNG" alt="MySQL">
+                                    <span>MySQL</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'java')">
+                                    <img src="Images/java.png" alt="Java">
+                                    <span>Java</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'c')">
+                                    <img src="Images/c.png" alt="C">
+                                    <span>C</span>
+                                </div>
+                                <div class="skill-item" onclick="toggleSkillContent(event, 'c++')">
+                                    <img src="Images/c++.png" alt="C++">
+                                    <span>C++</span>
+                                </div>
                             </div>
-                            <div class="skill-item">
-                                <img src="Images/java.png" alt="Java">
-                                <span>Java</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/c.png" alt="C">
-                                <span>C</span>
-                            </div>
-                            <div class="skill-item">
-                                <img src="Images/c++.png" alt="C++">
-                                <span>C++</span>
+                            <div class="more-content" id="programming-database">
+                                <p>
+                                    Programming and database management involve writing code and managing databases to create efficient and scalable software applications. This includes understanding data structures, algorithms, and database design principles.
+                                </p>
+                                <div class="skill-more-content" id="mysql">
+                                    <p>MySQL is an open-source relational database management system. It is widely used for web applications and is known for its reliability, flexibility, and ease of use. It supports SQL for querying and managing data.</p>
+                                </div>
+                                <div class="skill-more-content" id="java">
+                                    <p>Java is a high-level, class-based, object-oriented programming language designed for portability and performance. It is used for building large-scale applications, web development, and Android app development.</p>
+                                </div>
+                                <div class="skill-more-content" id="c">
+                                    <p>C is a general-purpose programming language that provides low-level access to memory. It is used for system programming, developing operating systems, and writing performance-critical applications.</p>
+                                </div>
+                                <div class="skill-more-content" id="c++">
+                                    <p>C++ is an extension of the C programming language that includes object-oriented features. It is used for system/software development, game development, and real-time simulations.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    
-
+        </section>
+   
 
     
        
         
        <!-- -------------- PROJECT BOX ---------------- -->
-
-      
-
-
-       <!-- <div class="container" id="Projects">
-        <div class="section-title">
-            <h1>CSS Image Hover Effect</h1>
-        </div> -->
+        
         <section class="section" id="projects">
           <div class="top-header">
               <h1>Projects</h1>
@@ -261,15 +415,15 @@
             <div class="column">
                 <div class="effect">
                     <div class="effect-img">
-                        <img src="Images/event management.avif" alt="">
+                        <img src="Images/Event.png" alt="">
                     </div>
                     <div class="effect-text">
                         <div class="inner">
                             <h2>Event management website</h2>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> -->
-                            <!-- <div class="effect-btn">
-                                <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
-                            </div> -->
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> --> -->
+                             <div class="effect-btn">
+                                <a href="#" class="btn"><i class="fa fa-eye"></i> Git HUb</a>
+                            </div> 
                         </div>
                     </div>
                 </div>
@@ -309,8 +463,92 @@
                 </div>
             </div>
         </div>
-    
+
+        <div class="row">
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/dashboard2.png" alt="">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Event management website</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> --> -->
+                             <div class="effect-btn">
+                                <a href="#" class="btn"><i class="fa fa-eye"></i> Git HUb</a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/dashboard.jpg" alt="Description of the image" style=" height: 270px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Hospital Management Website </h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> -->
+                            <!-- <div class="effect-btn">
+                                <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="effect">
+                    <div class="effect-img">
+                        <img src="Images/event management.avif" alt="Description of the image" style="width: 400px; height: 257px;">
+                    </div>
+                    <div class="effect-text">
+                        <div class="inner">
+                            <h2>Digital Marketing website</h2>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat velit qui quos repellat nulla soluta exceptu.</p> -->
+                            <!-- <div class="effect-btn">
+                                <a href="#" class="btn"><i class="fa fa-eye"></i> Read More</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
 </section>
+
+      <!-- ---Experience  BOx----->
+
+      <section class="experience-section">
+        <div class="top-header">
+            <h1>Experience</h1>
+          </div>
+        <div class="experience-container">
+            <div class="experience-block">
+                <div class="experience-header">
+                    <h3>Cosmic 365</h3>
+                    <span>April 2024 - June 2024</span>
+                    <h4>Associate Intern</h4>
+                </div>
+                <p>
+                    During my internship at Cosmic 365, I worked as an Associate Intern where I assisted in various web development projects. My responsibilities included developing new features, fixing bugs, and improving the overall user experience of the websites. I gained hands-on experience with front-end technologies such as HTML, CSS, and JavaScript.
+                </p>
+            </div>
+            <div class="experience-block">
+                <div class="experience-header">
+                    <h3>Aimbue Limited</h3>
+                    <span>June 2023 - July 2023</span>
+                    <h4>Web Developer Intern</h4>
+                </div>
+                <p>
+                    During my internship at Aimbue Limited, I gained extensive experience in web development. My responsibilities included developing and maintaining user-friendly websites, collaborating with design and backend teams to create seamless web applications, and utilizing technologies such as HTML, CSS, JavaScript, and various web development frameworks.
+                </p>
+            </div>
+        </div>
+    </section>
 
        <!-- -------------- CONTACT BOX ---------------- -->
 
@@ -323,24 +561,27 @@
              <div class="col">
                 <div class="contact-info">
                     <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: riyasharmars0409@gmail.com</p>
+                    <p><i class="uil uil-envelope"></i> Email: <a href="mailto:riyasharmars0409@gmail.com">riyasharmars0409@gmail.com</a></p>
+
                     <!-- <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p> -->
                 </div>
              </div>
+            
              <div class="col">
-                <div class="form-control">
+                <form class="form-control" name="submit-to-google-sheet" onsubmit="return handleSubmit(event)">
                     <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
+                        <input type="text" name="Name" class="input-field" placeholder="Name">
+                        <input type="email" name="Email" class="input-field" placeholder="Email">
                     </div>
                     <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
+                        <textarea name="Message" placeholder="Message"></textarea>
                     </div>
                     <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                        <button type="submit" class="btn" onclick="validateEmail()">Send <i class="uil uil-message"></i></button>
                     </div>
-                </div>
+                </form>
              </div>
+            
           </div>
        </section>
 
@@ -371,19 +612,25 @@
                 </li>
             </ul>
         </div>
-        <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-instagram"></i></div>
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-dribbble"></i></div>
-            <div class="icon"><i class="uil uil-github-alt"></i></div>
-        </div>
+        
         <div class="bottom-footer">
             <p>Copyright &copy; <a href="#home" style="text-decoration: none;"> Riya Sharma</a> - All rights reserved</p>
         </div>
     </footer>
 
     </div>
-
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx4S38t31KRJ9TFlvB7OP-OsI0wKF0nWzh1qRSJpBEoaYxg4UKMZRDnY-0nJO-XPGWaHg/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
     <script>
         function redirect(url) {
