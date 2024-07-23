@@ -1,7 +1,7 @@
 # Welcome to my portfolio website!  
 To look at the live demo of the website [click here]( https://riyasharma029.github.io/Project-3_Portfolio-Website/)
 ### This platform offers a comprehensive view of my professional journey, featuring sections on my background, education, technical skills, projects, and professional experience. One key project is my **Web Development Portfolio**, showcasing my expertise in HTML, CSS, and JavaScript. This project includes interactive features and form validation functionality to enhance user experience. To set it up, clone the repository from GitHub, navigate to the project directory, and open the `index.html` file in your browser. Explore the website to learn more about my skills and experience. Use the Contact form to reach out with any questions, opportunities, or feedback. Thank you for visiting my portfolio!
-![Project Banner]([link-to-your-banner-image](https://github.com/riyasharma029/Project-3_Portfolio-Website/edit/master/Images/banner1.png))
+![Project Banner](https://github.com/riyasharma029/Project-3_Portfolio-Website/edit/master/Images/banner1.png))
 
 ## Table of Contents
 - [Overview](#overview)
