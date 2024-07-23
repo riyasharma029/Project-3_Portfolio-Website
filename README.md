@@ -5,39 +5,31 @@ To look at the live demo of the website [click here]( https://riyasharma029.gith
 
 ## Table of Contents
 - [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Approach](#approach)
-- [Solution Features](#solution-features)
-- [Challenges Faced](#challenges-faced)
+- [Aim](#aim)
+- [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
-Provide a brief overview of your portfolio website here. Describe the purpose and goals of the project.
+This portfolio is a summer project completed at Sunstone. It showcases my personal and professional data analysis projects as well as web development projects, including website designs and other related endeavors. The portfolio features several pages: Home, About, Experience, Projects, and Contact Me. Each project demonstrates different aspects of web development and data science, such as dynamic content generation, styling, and interactivity.
 
-## Problem Statement
-Explain the problem or the need that your portfolio website addresses. This could be showcasing your work, skills, or experience to potential employers or clients.
+## Aim
+The goal of this project is to create a professional online portfolio that effectively highlights my skills and achievements in web development and data science. This website serves as a comprehensive showcase of my expertise, providing a detailed presentation of my work to potential employers and clients.
 
-## Approach
-Describe the approach you took to solve the problem. This section can include research, planning, design decisions, and development processes.
-
-## Solution Features
-List and explain the key features of your portfolio website. What makes your site unique or impressive?
-
-## Challenges Faced
-Discuss any challenges or obstacles you encountered during the development of your portfolio website and how you overcame them.
+## features
+- **Comprehensive Navigation**: Seamlessly navigate through various sections including Home, About, Experience, Projects, and Contact Me.
+- **Dynamic Project Display**: Utilize JavaScript to dynamically load and update project content, ensuring the portfolio remains current and easily manageable.
+- **Responsive Design**: Designed to offer an optimal viewing experience across a wide range of devices, from desktop monitors to mobile phones.
+- **Interactive Components**: Enhance user engagement with interactive elements such as project galleries and contact forms.
+- **Detailed Project Documentation**: Each project is accompanied by thorough documentation, providing clear insights into the development process and key features.
 
 ## Technologies Used
-List the technologies and tools you used to build your portfolio website. This can include programming languages, frameworks, libraries, and any other relevant tools.
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Node.js**
 
-## Installation
-Provide step-by-step instructions on how to set up and run your project locally. This can include prerequisites, installation commands, and configuration steps.
+## Acknowledgments
+I would like to extend my sincere thanks to my mentors and peers at Sunstone for their unwavering support and guidance throughout this project. Their mentorship has been invaluable to my growth.
 
-```bash
-# Example installation steps
-git clone https://github.com/your-username/portfolio-website.git
-cd portfolio-website
-npm install
-npm start
+
