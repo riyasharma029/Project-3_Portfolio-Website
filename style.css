@@ -870,7 +870,7 @@ main {
 } */
 
 .experience-section {
-    background-color: #121212; /* Darker background for section */
+    /* background-color: #121212; Darker background for section */
     border-radius: 8px;
     padding: 20px;
     max-width: 1000px;
@@ -926,7 +926,7 @@ main {
     position: relative;
     overflow: hidden;
 }
-
+  
 .experience-block::before {
     content: '';
     position: absolute;
@@ -981,6 +981,7 @@ main {
     position: relative;
     z-index: 1;
 }
+
 
 @keyframes fadeIn {
     0% {
