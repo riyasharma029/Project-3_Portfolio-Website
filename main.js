@@ -205,6 +205,8 @@ function handleSubmit(event) {
       alert("Please enter a valid email address.");
       return false;
   }
+  
+  else
 
   // Display success message
   alert("Submitted successfully!");
