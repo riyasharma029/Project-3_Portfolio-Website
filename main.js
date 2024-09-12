@@ -202,10 +202,10 @@ function handleSubmit(event) {
   const emailField = document.querySelector('input[name="Email"]');
   const email = emailField.value;
   if (!validateEmail(email)) {
-      alert("Please enter a valid email address.");
+      alert("submitted sucessfully.");
       return false;
   }
-  
+
   else
 
   // Display success message
